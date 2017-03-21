@@ -1,0 +1,43 @@
+<div class="main">
+    <h1>Projecten</h1>
+    <div class="wrapper">
+        <div class="get" *ngFor="let project of projects">
+            <table>
+                <tr>
+                    
+                </tr>
+                <tr>
+                    <h3>{{project.name}}</h3>
+                </tr>
+                <tr>
+                    <h3>{{project.developer}}</h3>
+                </tr>
+                <tr>
+                    <h3>{{project.client}}</h3>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+
+    <div class="post">
+        <h1>Maak een nieuw project aan</h1>
+
+        <h4>Naam van het project</h4>
+        <input type="text" placeholder="Naam"/>
+
+        <h4>Client van het project</h4>
+        <input type="text" placeholder="Client"/>
+
+        <h4>Developer van het project</h4>
+        <input type="text" placeholder="Developer"/>
+
+        <h4>Link naar het project</h4>
+        <input type="text" placeholder="Link"/>
+        
+        <button>Submit</button>
+    </div>
+</div>
+
+
+

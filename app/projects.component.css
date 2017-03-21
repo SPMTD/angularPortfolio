@@ -1,0 +1,55 @@
+input {
+  font-size:1.3rem;
+  width:25%;
+  padding:18px;
+}
+
+.get {
+  display: inline-block;
+  margin-right: 1px;
+  margin-left: 1px;
+}
+
+.post input{
+  font-size:1.3rem;
+  width:100%;
+  padding:18px;
+}
+
+button {
+  border: none;
+  border-radius: 18px;
+  color: #ffffff;
+  font-size: 1.3rem;
+  background: #3498db;
+  padding:18px;
+  cursor:pointer;
+  margin-top: 25px;
+}
+
+button:hover {
+  background: #3cb0fd;
+}
+
+button:focus {
+  outline:0;
+}
+
+table, tr {
+  border: 1px solid black;
+}
+.naam {
+  float: left;
+  top: -100px;
+  margin-right: 20px;
+}
+.developer {
+  float: left;
+  margin-right: 20px;
+  /*margin-top: 85px;*/
+}
+.client {
+  float: left;
+  margin-right: 20px;
+  /*margin-top: 170px;*/
+}
