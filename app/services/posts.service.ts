@@ -17,10 +17,11 @@ export class PostService {
         .map(res => res.json());
     }
 
-    saveProjects(projects) {
+    addProject(newProject: any) {
         var headers = new Headers();
         headers.append('content-type', 'application/json');
-        return this.http.post(apiLink, JSON.stringify(projects), {headers:headers})
+        
+        return this.http.post(apiLink, JSON.stringify(newProject), {headers:headers})
         .map(res => res.json());
     }
 }

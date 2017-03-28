@@ -22,20 +22,20 @@
 
     <div class="post">
         <h1>Maak een nieuw project aan</h1>
+            <div class="form-group">
+        <input [(ngModel)] = "projectName" type="text" class="form-control" id="name" placeholder = "Project Name" required>
+    </div>
+    <div class="form-group">
+        <input [(ngModel)] = "projectDeveloper" type="text" class="form-control" id="developer" placeholder = "Project Developer" required>
+    </div>
+    <div class="form-group">
+        <input [(ngModel)] = "projectClient" type="text" class="form-control" id="client" placeholder = "Project Client" required>
+    </div>
+    <div class = "form-group">
+        <input (click) = "addProject()" class = "btn btn-default" type="submit" value = "Add"><
+    </div>
 
-        <h4>Naam van het project</h4>
-        <input type="text" placeholder="Naam"/>
-
-        <h4>Client van het project</h4>
-        <input type="text" placeholder="Client"/>
-
-        <h4>Developer van het project</h4>
-        <input type="text" placeholder="Developer"/>
-
-        <h4>Link naar het project</h4>
-        <input type="text" placeholder="Link"/>
-        
-        <button>Submit</button>
+        </div>
     </div>
 </div>
 

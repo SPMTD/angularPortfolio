@@ -32,4 +32,21 @@ export class ProjectsComponent  {
       console.log(projects.items)
     })
   }
+
+  projectName: string;
+  projectClient: string;
+  projectDeveloper: string;
+
+  addProject () {
+    var newProject = {
+      name: this.projectName,
+      client: this.projectClient,
+      developer: this.projectDeveloper
+    }
+
+    console.log(newProject);
+    var res = this._postsService.addProject(newProject);
+    res.subscribe();
+  }
+   
 }
