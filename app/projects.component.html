@@ -8,15 +8,17 @@
                 </tr>
                 <tr>
                     <h3>{{project.name}}</h3>
+                    
                 </tr>
                 <tr>
                     <h3>{{project.developer}}</h3>
                 </tr>
                 <tr>
                     <h3>{{project.client}}</h3>
+                    <button (click) = "removeProject()" class = "btn-danger"><i class = "glyphicon glyphicon-remove"></i>Remove Project</button>
+                    <button (click) = "editProject()" class = "btn-primary"><i class = "glyphicon glyphicon-pencil"></i>Edit Project</button>
                 </tr>
             </table>
-            
         </div>
     </div>
 </div>
