@@ -5,12 +5,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PostService } from './services/posts.service';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'project-list',
   templateUrl: './app/project.component.html',
   styleUrls: ['./app/project.component.css'],
-  providers: [PostService]
+  providers: [ PostService ]
 })
 export class ProjectComponent implements OnInit {
 
@@ -25,7 +27,6 @@ export class ProjectComponent implements OnInit {
     completedText: string;
 
     constructor(private _postService: PostService, private _route: ActivatedRoute, private _router: Router) {
-        
     }
 
     ngOnInit() {
@@ -57,5 +58,5 @@ export class ProjectComponent implements OnInit {
 
     editProject() {
         this._router.navigate(['/edit/', this.projectId]); // Redirect
-
+    }
 }

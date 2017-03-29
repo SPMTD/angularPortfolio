@@ -4,18 +4,17 @@
         <div class="get" *ngFor="let project of projects">
             <table>
                 <tr>
-                    
-                </tr>
-                <tr>
+                    <h3 style="display: none">{{ project._id}}</h3>
+
                     <h3>{{project.name}}</h3>
                     
-                </tr>
-                <tr>
                     <h3>{{project.developer}}</h3>
-                </tr>
-                <tr>
+
                     <h3>{{project.client}}</h3>
-                    <button (click) = "removeProject()" class = "btn-danger"><i class = "glyphicon glyphicon-remove"></i>Remove Project</button>
+
+                    <h3>Project completed = {{project.completed}}</h3>
+
+                    <button (click) = "detailsProject()" class = "btn-danger"><i class = "glyphicon glyphicon-remove"></i>details</button>
                     <button (click) = "editProject()" class = "btn-primary"><i class = "glyphicon glyphicon-pencil"></i>Edit Project</button>
                 </tr>
             </table>
@@ -32,6 +31,9 @@
     </div>
     <div class="form-group">
         <input [(ngModel)] = "projectClient" type="text" class="form-control" id="client" placeholder = "Project Client" required>
+    </div>
+    <div class="form-group">
+        <input [(ngModel)] = "projectCompleted" type="boolean" class="form-control" id="completed" required>
     </div>
     <div class = "form-group">
         <input (click) = "addProject()" class = "btn btn-default" type="submit" value = "Add">

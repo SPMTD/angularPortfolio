@@ -12,6 +12,8 @@ export class PostService {
 
     }
 
+    id: string;
+
     getProjects() {
         return this.http.get(apiLink)
         .map(res => res.json());
@@ -36,7 +38,7 @@ export class PostService {
         let options = new RequestOptions({headers: headers });
     }
 
-    deleteProject(id : string) {
-        return this.http.delete(apiLink + id);
+    deleteProject(_id : string) {
+        return this.http.delete(apiLink + _id);
     }
 }
