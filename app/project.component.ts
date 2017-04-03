@@ -31,7 +31,7 @@ export class ProjectComponent implements OnInit {
 
     ngOnInit() {
       this.sub = this._route.params.subscribe(params => {
-        this.projectId = params['id'];
+        this.projectId = params['_id'];
       });
     }
 

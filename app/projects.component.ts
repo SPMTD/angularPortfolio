@@ -53,7 +53,7 @@ export class ProjectsComponent  {
     var res = this._postsService.addProject(newProject);
     res.subscribe();
   }
-  detailsProject() {
-    this._router.navigate['']
+  detailsProject(_id: string) {
+    console.log(_id);
   }
 }

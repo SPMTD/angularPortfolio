@@ -14,7 +14,7 @@
 
                     <h3>Project completed = {{project.completed}}</h3>
 
-                    <button (click) = "detailsProject()" class = "btn-danger"><i class = "glyphicon glyphicon-remove"></i>details</button>
+                    <button (click) = "detailsProject(project._id)" class = "btn-danger"><i class = "glyphicon glyphicon-remove"></i>details</button>
                     <button (click) = "editProject()" class = "btn-primary"><i class = "glyphicon glyphicon-pencil"></i>Edit Project</button>
                 </tr>
             </table>
