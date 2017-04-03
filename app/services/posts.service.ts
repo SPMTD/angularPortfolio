@@ -27,7 +27,7 @@ export class PostService {
     addProject(newProject: any) {
         var headers = new Headers();
         headers.append('content-type', 'application/json');
-        
+    
         return this.http.post(apiLink, JSON.stringify(newProject), {headers:headers})
         .map(res => res.json());
     }
@@ -38,7 +38,7 @@ export class PostService {
         let options = new RequestOptions({headers: headers });
     }
 
-    deleteProject(_id : string) {
+    deleteProject(_id: string) {
         return this.http.delete(apiLink + _id);
     }
 }

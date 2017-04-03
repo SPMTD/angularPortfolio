@@ -56,4 +56,9 @@ export class ProjectsComponent  {
   detailsProject(_id: string) {
     console.log(_id);
   }
+
+  deleteProject(_id: string) {
+     this._postsService.deleteProject(_id).subscribe();
+      this._router.navigate(['/']); // Redirect
+  }
 }
