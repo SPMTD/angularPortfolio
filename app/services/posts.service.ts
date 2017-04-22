@@ -19,8 +19,8 @@ export class PostService {
         .map(res => res.json());
     }
 
-    getSpecificProject(id: string) {
-        return this.http.get(apiLink + id)
+    getSpecificProject(_id: string) {
+        return this.http.get(apiLink + _id)
             .map(res => res.json());
     }
 

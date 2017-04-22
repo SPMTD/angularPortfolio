@@ -33,6 +33,7 @@ export class ProjectComponent implements OnInit {
       this.sub = this._route.params.subscribe(params => {
         this.projectId = params['_id'];
       });
+      this.getProjectInformation();
     }
 
     getProjectInformation() {
